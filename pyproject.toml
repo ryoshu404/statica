@@ -1,0 +1,7 @@
+[project]
+name = "statica"
+version = "0.1.0"
+description = "Statica - Format-agnostic static analysis pipeline"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
