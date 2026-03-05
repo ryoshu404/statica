@@ -2,6 +2,9 @@
 name = "statica"
 version = "0.1.0"
 description = "Statica - Format-agnostic static analysis pipeline"
+authors = [
+    { name = "R. Santos" }
+]
 requires-python = ">=3.11"
 readme = "README.md"
 license = { text = "MIT" }
