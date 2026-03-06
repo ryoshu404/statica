@@ -13,6 +13,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument('path')
     parser.add_argument('-f', '--format', choices=['json'], default='json', help="Format for output, defaults to json.")
+    parser.add_argument('-m', '--minlen', type=int, default=6, help='Min length for string recognition, defaults to 6')
     
     return parser.parse_args()
 
@@ -24,7 +25,7 @@ def main():
         print(f"Error: {filepath} not found", file=sys.stderr)
         sys.exit(1)
     filepath = filepath.resolve()
-    pipeline = StaticAnalysisPipeline()
+    pipeline = StaticAnalysisPipeline(min_string_len=args.minlen)
     report = pipeline.run(filepath)
     print(json.dumps(report, indent=2))
     
