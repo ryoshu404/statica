@@ -2,7 +2,7 @@
 
 Statica is a format-agnostic static analysis pipeline written in Python.
 
-## Goals (v0.1)
+## Goals (v1.0)
 
 - Compute MD5 and SHA256
 - Extract printable ASCII strings

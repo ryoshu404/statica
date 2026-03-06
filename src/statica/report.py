@@ -7,7 +7,7 @@ class ReportBuilder:
         report = {}
         report["tool"] = {
             "name": "statica",
-            "version": "0.1.0"
+            "version": "1.0.0"
         }
         report["input"] = {"path": str(filepath)}
         report["hashes"] = features.get("hashes", {})
