@@ -5,16 +5,14 @@ from statica.extractors.hash_extractor import HashExtractor
 class StaticAnalysisPipeline:
 
     def __init__(self):
-        
-        pass
+        self.hash_extractor = HashExtractor()
 
     def run(self, filepath: Path) -> dict:
 
         with open(filepath, 'rb') as f:
 
             content = f.read()
-            hash_extractor = HashExtractor()
-            hashes = hash_extractor.extract(content)
+            hashes = self.hash_extractor.extract(content)
             features = {
                 "hashes": {},
                 "iocs": {},
@@ -23,7 +21,7 @@ class StaticAnalysisPipeline:
             features['hashes'] = hashes
             report_builder = ReportBuilder()
             report = report_builder.build(filepath, features)
-            
+
             return report
 
         
