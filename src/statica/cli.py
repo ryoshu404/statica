@@ -14,7 +14,7 @@ def parse_args() -> argparse.Namespace:
     
     parser = argparse.ArgumentParser(
         prog='statica',
-        description='Statica — modular static analysis pipeline',
+        description='Statica - modular static analysis pipeline',
         epilog='https://github.com/ryoshu404/statica',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
