@@ -16,7 +16,7 @@ class StaticAnalysisPipeline:
         self.ioc_candidates_extractor = StringExtractor(min_len=4)
         self.ioc_extractor = IOCExtractor()
 
-    def run(self, filepath: Path) -> dict:
+    def run(self, filepath: Path, VERSION) -> dict:
 
         with open(filepath, 'rb') as f:
 
@@ -31,7 +31,7 @@ class StaticAnalysisPipeline:
                 "strings": strings
                 }
             report_builder = ReportBuilder()
-            report = report_builder.build(filepath, features)
+            report = report_builder.build(filepath, features, VERSION)
 
             return report
 

@@ -1,13 +1,14 @@
 from pathlib import Path
+import importlib.metadata
 
 class ReportBuilder:
 
-    def build(self, filepath: Path, features: dict) -> dict:
+    def build(self, filepath: Path, features: dict, VERSION) -> dict:
     
         report = {}
         report["tool"] = {
             "name": "statica",
-            "version": "1.0.0"
+            "version": VERSION
         }
         report["input"] = {"path": str(filepath)}
         report["hashes"] = features.get("hashes", {})

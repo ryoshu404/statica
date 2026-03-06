@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "statica"
 version = "1.0.0"
@@ -8,3 +12,9 @@ authors = [
 requires-python = ">=3.11"
 readme = "README.md"
 license = { text = "MIT" }
+
+[project.scripts]
+statica = "statica.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
