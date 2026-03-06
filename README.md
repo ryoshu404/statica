@@ -1,17 +1,10 @@
 # Statica
 
-Statica is a modular static analysis pipeline written in Python that performs lightweight file analysis and produces structured JSON output suitable for automation and security workflows.
+Statica is a modular static analysis pipeline written in Python that performs lightweight file analysis and produces structured JSON output suitable for automation and security workflows. The goal of Statica is to provide a simple, automation-friendly static analysis tool that can be integrated into security workflows, triage pipelines, and detection tooling.
 
 The tool extracts file hashes, printable strings, and common indicators of compromise (IOCs) such as IP addresses, URLs, domains, and suspicious file artifacts.
 
 Statica is designed as a modular security analysis tool that demonstrates clean architecture, maintainable code structure, and automation-friendly output.
-
-This project is part of a security engineering portfolio focused on roles such as:
-
-- Security Engineer
-- Security Research Engineer
-- Detection Engineer
-- Malware Analysis / Reverse Engineering adjacent roles
 
 ---
 
@@ -266,3 +259,9 @@ Future versions of Statica may integrate with the IOC service for indicator enri
 
 R. Santos  
 GitHub: https://github.com/ryoshu404
+
+---
+
+# License
+
+MIT
