@@ -1,8 +1,10 @@
 import argparse
 import sys
-import json
 from pathlib import Path
 from statica.pipeline import StaticAnalysisPipeline
+from statica.formatters.json_formatter import format_json
+
+
 
 def parse_args() -> argparse.Namespace:
     
@@ -27,7 +29,10 @@ def main():
     filepath = filepath.resolve()
     pipeline = StaticAnalysisPipeline(min_string_len=args.minlen)
     report = pipeline.run(filepath)
-    print(json.dumps(report, indent=2))
+    match args.format:
+        case "json":
+            formatted = format_json(report)
+    print(formatted)
     
 if __name__ == "__main__":
     main()
