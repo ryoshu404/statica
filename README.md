@@ -239,19 +239,20 @@ Potential future improvements include:
 
 ---
 
-# Related Projects (Planned)
+# Related Projects
 
 This project is part of a larger security tooling portfolio.
 
-Upcoming projects include:
+### macollect (in progress)
+Modular macOS forensic artifact collector written in Python. Collects persistence mechanisms, process snapshots, code signing metadata, TCC permissions, and Unified Log activity across eight independent collection modules.
+GitHub: https://github.com/ryoshu404/macollect
 
-### macOS DFIR Collector
-Endpoint telemetry collection tool for macOS systems.
+### IOC Correlation Service (planned)
+Threat intelligence correlation service written in Go. Future enrichment integration layer for both Statica and macollect output.
 
-### IOC Correlation Service
-Threat intelligence correlation service written in Go.
+### Swift ESF Telemetry Tool (planned)
+Real-time kernel event streaming companion to macollect using Apple's Endpoint Security Framework.
 
-Future versions of Statica may integrate with the IOC service for indicator enrichment.
 
 ---
 
