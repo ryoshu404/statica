@@ -4,8 +4,6 @@ Statica is a modular static analysis pipeline written in Python that performs li
 
 The tool extracts file hashes, printable strings, and common indicators of compromise (IOCs) such as IP addresses, URLs, domains, and suspicious file artifacts.
 
-Statica is designed as a modular security analysis tool that demonstrates clean architecture, maintainable code structure, and automation-friendly output.
-
 ---
 
 # Features
@@ -243,7 +241,7 @@ Potential future improvements include:
 
 This project is part of a larger security tooling portfolio.
 
-### [macollect](https://github.com/ryoshu404/macollect) (in progress)
+### [macollect](https://github.com/ryoshu404/macollect) (v1.0)
 Modular macOS forensic artifact collector written in Python. Collects persistence mechanisms, process snapshots, code signing metadata, TCC permissions, and Unified Log activity across eight independent collection modules.
 
 ### IOC Correlation Service (planned)
