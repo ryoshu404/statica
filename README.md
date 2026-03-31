@@ -244,7 +244,7 @@ This project is part of a larger security tooling portfolio.
 ### [macollect](https://github.com/ryoshu404/macollect) (v1.0)
 Modular macOS forensic artifact collector written in Python. Collects persistence mechanisms, process snapshots, code signing metadata, TCC permissions, and Unified Log activity across eight independent collection modules.
 
-### IOC Correlation Service (planned)
+### [gorelate](https://github.com/ryoshu404/gorelate)  (In Development)
 Threat intelligence correlation service written in Go. Future enrichment integration layer for both Statica and macollect output.
 
 ### Swift ESF Telemetry Tool (planned)
